@@ -1,0 +1,1 @@
+{!! Form::button('<i class="fa fa-check marg_10" aria-hidden="true"></i>Potwierdź', ['class' => 'btn btn-success ', 'type' => 'submit']) !!}

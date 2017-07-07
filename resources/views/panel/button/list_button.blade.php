@@ -1,0 +1,1 @@
+<a href="{{action($controller)}}" class="button btn btn-danger"><i class="fa fa-list-ul marg_r10" aria-hidden="true"></i><ins class="col_hidden">Wróć do listy</ins></a>

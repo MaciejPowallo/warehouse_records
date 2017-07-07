@@ -1,0 +1,1 @@
+<button class="btn btn-success form-bottom-marg" onclick="Print()"><i class="fa fa-print marg_r10" aria-hidden="true"></i><ins class="col_hidden">Drukuj</ins></button>

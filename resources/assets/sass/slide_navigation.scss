@@ -1,0 +1,125 @@
+@import "variables";
+
+.sidenav {
+    height: 100%; 
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: $color;
+    overflow-x: hidden;
+    transition: 0.6s; 
+
+	a {
+	    padding: 5px 5px 5px 20px;
+	    text-decoration: none;
+	    display: block;
+		color: $text-color-inverse;
+	}
+
+	div {
+	    float:left;
+		width: 100%;
+	}
+
+	a:hover{
+	    color: $color-light;
+	    background-color: $color-darker;
+	 }
+
+	a:focus {
+		color: $text-cliced;
+	    background-color: $color-darker;
+	 }
+
+	.closebtn {
+		padding: 0 20px;
+	    font-size: 36px;
+	}
+
+	.closebtn:hover {
+		color: $text-cliced;
+		background-color: $color;
+	}
+
+	.closebtn:active {
+		color: $color-light;
+		background-color: $color;
+	}	
+}
+
+// Rozwijane elementy
+.child {
+	display: none;
+
+	> a {
+	padding: 5px 5px 5px 40px;
+	}
+	> strong {
+	padding: 5px 5px 5px 10px;
+	color: $brand-info;
+	}
+}
+
+//Przycisk otwierajacy menu
+.open_sidenav {
+	position:fixed;
+	top:100px;
+	left:0;
+	padding: 15px;
+	border-radius: 0 10px 10px 0;
+    background-color: $color;
+	color: $text-color-inverse;
+    z-index: 9998;
+
+	&:hover {
+	color: $text-cliced;
+	}
+
+	&:active {
+	color: $color-light;
+	}
+}
+
+//Caret
+.caret_right {
+	.fa-caret-right {
+    	display: none;
+	}
+	.fa-caret-down{
+    	display: inline;
+	}
+		color: $color-light;
+		background-color: $color-darker;	
+	    padding: 5px 5px 5px 20px;
+}
+
+.caret_down {
+	.fa-caret-right {
+    	display: inline;
+	}
+	.fa-caret-down {
+    	display: none;
+	}
+		color: $text-color-inverse;
+		background-color: $color;	
+	    padding: 5px 5px 5px 20px;
+
+	&:hover {
+	    color: $color-light;
+	    background-color: $color-darker;
+	 }
+
+	&:focus {
+		color: $text-cliced;
+	    background-color: $color-darker;
+	 }
+}
+
+// Dla malych rozdzielczości
+@media(max-width:768px) {
+	.open_sidenav {
+		top:0px;
+	}
+}

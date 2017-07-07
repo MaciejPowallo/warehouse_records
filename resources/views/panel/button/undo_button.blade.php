@@ -1,0 +1,1 @@
+						<a href="{{action($controller)}}" class="btn btn-danger"><i class="fa fa-times marg_r10" aria-hidden="true"></i>Cofnij</a>

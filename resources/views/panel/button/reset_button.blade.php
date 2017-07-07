@@ -1,0 +1,1 @@
+{!! Form::button('<i class="fa fa-eraser marg_r10" aria-hidden="true"></i><ins class="col_hidden">Wyczyść</ins>', ['class' => 'btn btn-warning ', 'type' => 'reset']) !!}	

@@ -1,0 +1,1 @@
+{!! Form::button('<i class="fa fa-floppy-o marg_r10" aria-hidden="true"></i><ins class="col_hidden">Zapisz</ins>', ['class' => 'btn btn-success', 'type' => 'submit', 'id' => 'float']) !!}

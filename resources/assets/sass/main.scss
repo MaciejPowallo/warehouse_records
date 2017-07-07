@@ -1,0 +1,548 @@
+
+@import "variables";
+
+ //----------------------- MAIN --------------------------------------------------//
+body {
+    overflow-x: hidden;
+    background-color: $body-primary;
+}
+
+p {
+    color: $text-color;
+}
+
+a{
+	color: $text-color;
+}
+
+ins{
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+.red_text {
+	color: $text-cliced;
+}
+
+.green_text {
+	color: $text-green;
+}
+
+.txt-hover {
+	color: $text-hover;
+}
+
+.pos_footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: $color-darker;
+	z-index: 999;
+}
+
+.log_footer {
+	margin: $height-base * 0.8 auto;
+    color: $text-color-inverse;
+}
+
+.content-position {
+	margin-top: $height-base * 4 ;
+	margin-bottom:  $height-base * 4 ;
+}
+
+.form-bottom-marg, .marg_b10 {
+	margin-bottom: 10px;
+}
+
+.form-top-marg {
+	margin-top: 10px;
+}
+
+.size-2 {
+   font-size: $font-size-base * 2;
+}
+
+.marg_r10, .marg_10 {
+	margin-right: 10px;
+}
+
+.marg_t50 {
+	margin-top: 50px;
+}
+
+.marg_b100 {
+	margin-bottom: 100px;
+}
+
+.border_hidden {
+	border: 2px solid $body-primary;
+	tr, td, th{
+		border: 2px solid $body-primary;
+		text-align: center;	
+	}
+}
+.master_content {
+	margin:0 auto; 
+	padding: 0; 
+	width:98%
+}
+
+.always_hidden {
+	display: none;
+    visibility: hidden;
+}
+
+.pass_form {
+	width: 100%;
+}
+
+.signature {
+	height: 100px;
+	div{
+		margin: 20px 10px; 
+	}
+}
+
+.btn-gray {
+    background-color: $color-dark;
+    color: $white;
+	&:hover, &:focus{
+    background-color: $color-darker;
+    color: $white;
+	}
+}
+
+.btn-white {
+    background-color: $body-primary;
+    color: $text-color;
+	&:hover, &:focus{
+    background-color: $white;
+    color: $text-color;
+	}
+}
+
+.table-bordered tbody > tr > td {
+	text-align:right;
+}
+
+.table-responsive {
+	font-size: $font-size-base * 0.85; 
+}
+
+.c1{
+	background-color: #FDDBDB;
+}
+
+.c2 {
+	background-color: #DBF6DF;
+}
+
+//----------------------- WYSZUKIWARKA --------------------------------------------//
+select.search, input.search {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    height:  $font-size-base * 2; 
+    min-width: 60px;
+    padding-right: 3px;
+}
+
+.button_search {
+	font-size: $font-size-base * 0.5; 
+	padding: $font-size-base * 0.4; 
+}
+
+//----------------------- PAGE MASTER --------------------------------------------//
+//----------------------- PIERWSZE MENU ----------------------------------------- //
+
+.toolbar {
+	background-color: $body-primary;
+    font-size: $font-size-base * 0.9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	z-index: 99;
+	
+	.container{
+	background-color: $body-primary;
+	margin-left: 0;
+}
+
+	 &:after {
+        content:'';
+        display: block;
+        clear: both;
+      }
+
+    ul > li {
+        float:left;
+ 		list-style-type: none;
+		background-color: $body-primary;
+    }
+
+    ul > li > a {
+        display: block;
+		border: 0;
+        padding: 5px 8px 0 8px;
+        text-decoration: none;
+		color: $text-color;
+     }
+
+    ul > li:hover > a {
+        color: $text-blue; 
+        background-color: darken($body-primary, 4%);
+    }
+
+    ul > li:hover > a:focus {
+        color: $text-cliced;
+		background-color: $body-primary;
+    }
+
+
+/* 	CZĘŚĆ-ROZWIJANA PIERWSZEGO MENU	*/
+    ul > li > ul {
+        width:160px;
+        visibility:hidden;
+        position:absolute;
+        z-index:99;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+		background-color: $body-primary;
+		border: 1px solid $color-light;
+    }
+
+    ul > li:hover > ul {
+        visibility:visible;
+    }
+
+    ul > li > ul > li > a {
+        display:block;
+        text-decoration:none;
+        padding: 3px 10px;
+    }
+
+    ul > li > ul > li:hover > a {
+        color: $text-blue; 
+        background-color: darken($body-primary, 4%);
+		font-weight: bold;
+        width: 158px;
+    }
+
+    ul > li > ul > li > a:focus {
+	    color: $text-cliced;
+        background-color: darken($body-primary, 8%);
+        width: 158px;
+	}
+
+/* ANIMOWANIE ROZWIJANEJ CZĘŚCI MENU CSS  */
+    ul > li > ul {
+        transform:scaleY(0);
+        -webkit-transform:scaleY(0);
+        transform-origin:50% 0;
+        -webkit-transform-origin:50% 0;
+        transition:350ms;
+    }
+
+    ul > li:hover > ul {
+        transform:scaleY(1);
+        -webkit-transform:scaleY(1);
+    }
+
+/* logo po lewej stronie menu */
+    ul > li:hover > a.logo_sm {
+        background-color: $body-primary;
+	    &:focus > img{
+	   		height: $font-size-base * 0.8;
+	   		padding-left: $font-size-base * 0.25;
+	    }
+    }
+}
+
+.logo_sm {
+	float: left;
+    width: auto;
+    padding-top: $font-size-base * 0.1;
+    height: $font-size-base * 0.9;
+}
+
+li.simple:hover > a {
+    color: darken($text-blue, 50%); 
+    background-color: darken($body-primary, 4%);
+	font-weight: bold;
+}
+
+//----------------------- DRUGIE MENU ------------------------------------------- //
+.top_menu{
+	width: 100%;
+}
+
+.navbar{
+	background-color: $color;
+	color: $text-color-inverse;
+	top: $line-height-base * 0.8;
+	border-radius: 0;
+	z-index: 98;
+}
+ 
+.navbar-default .navbar-nav > li a {
+	color: $text-color-inverse;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-default .navbar-nav > li  a:hover{
+	color: $color-light;
+}
+ 
+.navbar-default .navbar-nav > li  a:focus {
+    color: $text-cliced;
+}
+
+.nav > li{
+	width: auto;
+	height: auto;
+	padding: $font-size-base * 0.28;
+	margin: $font-size-base * 0.28;
+	background-color: $color;
+	color: $text-color-inverse;
+	border: 2px solid $color-light;
+	border-radius: $font-size-base * 0.5;
+	i{
+		margin: 0 auto;
+		display: block;
+	}
+	&:hover{
+		background-color: $color-dark;
+		border: 2px solid $color-base;
+	}
+	&:focus{
+		background-color: $color-dark;
+		border: 2px solid $color-base;
+	}
+}
+
+.nav > li.disable {
+	&:hover{
+		background-color: $color;
+		border: 2px solid $color-light;
+	}
+	&:focus{
+		background-color: $color;
+		border: 2px solid $color-light;
+	}
+	a:hover, a:focus {
+		color: $text-color-inverse;
+	}
+}
+
+//----------------------- PAGE WELCOME --------------------------------------------//
+.log_form_position {
+    margin: $height-base auto $height-base * 5 auto;
+    max-width: 250px;
+    color: $color-darker;
+}
+
+div.mb {
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-top:20px;
+	margin-bottom: 40px;
+	max-width:50%;
+}
+
+.image_bg {
+	background-image: linear-gradient(to bottom, rgba($body-primary,0.8) 0%,rgba($body-primary,0.8) 100%), url("../images/bg.jpg");
+	background-color: $body-primary;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
+    z-index: -5; 
+    height : 100%;
+    left: 0;
+    top: 0;
+}
+
+//----------------------- Kalendarz --------------------------------------------//
+.col14 {
+	width: 13%; 
+	float:left;
+}
+
+
+.top_date {
+	font-size: 24px;
+}
+
+#kalendarz .akt {
+	height: 60px; 
+	padding:0px 0 0 7px; 
+	margin: 1px; 
+	border:1px solid #777; 
+	font-weight: bold; 
+	font-size: 20px; 
+	font-family: 'Akronim', sans-serif; 
+	color: #990000; 
+	background: #ccc; 
+	font-weight: bold; 
+	border:1px solid #990000; 
+	border-left-color: #990000; 
+	border-left-width: 5px;
+}
+
+#kalendarz .no_vis {
+	height: 60px; 
+	padding:0px 0 0 7px; 
+	margin: 1px; 
+	border: 1px solid $color-light; 
+}
+
+#kalendarz .name > div {
+	height: 30px; 
+	padding: 3px; 
+	margin: 1px; 
+	border: 3px solid $color; 
+	border-style: ridge; 
+	font-size: 16px; font-weight: bold;
+}
+
+#kalendarz .day {
+	height: 60px; 
+	padding: 0 0 0 7px; 
+	margin: 1px; 
+	border: 1px solid $color; 
+	font-weight: bold; 
+	font-size: 20px; 
+	font-family: 'Akronim', sans-serif;
+}
+
+.pad_b50{
+	padding-bottom: 50px;
+}
+
+//----------------------- Zmiany dla innych rozdzielczości ------------------------//
+@media(max-width:992px) {
+	.toolbar {
+   		font-size: $font-size-base * 0.6;
+		position: fixed;
+		top: 0;
+		margin: 0;
+		border: 0;
+		padding: 0;
+
+	    ul > li > a {
+	        padding: 5px 8px;
+	     }
+
+	    ul > li > ul {
+	        width:120px;
+	    }
+	    ul > li > ul > li:hover > a {
+	        width: 118px;
+	    }
+
+	    ul > li > ul > li > a:focus {
+	        width: 118px;
+		}
+	}
+
+	.logo_sm {
+	    padding-top: 0;
+	    height: $font-size-base * 0.8;
+	}
+
+	.nav > li{
+		font-size: $font-size-base * 0.7;
+	}
+}
+
+
+@media(max-width:768px) {
+	.logo {
+		margin: 10px auto;
+		max-width:80%;
+		max-height:120px;
+	}
+
+	.log_footer {
+		margin: $height-base * 0.2 auto;
+	}
+
+	.toolbar {
+		display: none;
+	    visibility: hidden;
+	}
+
+	.navbar {
+	top: 0;
+	}
+
+	.col_hidden {
+		display: none;
+	    visibility: hidden;
+	}
+
+	body{
+		font-size: $font-size-base * 0.9;
+		background-color: $body-primary;
+	}
+
+	.marg_r10 {
+	margin: 0;
+	}
+
+	.marg_b10 {
+	margin-bottom: 10px;
+}
+
+	select.search, input.search {
+	    height:  $font-size-base * 1.2; 
+	    min-width: 60px;
+	    padding: 1px; 
+	    margin: 0;
+	}
+
+	.button_search {
+		font-size: $font-size-base * 0.35; 
+		padding: $font-size-base * 0.2; 
+	}
+
+	#kalendarz .day {
+		height: 40px; 
+		padding: 0 0 0 5px; 
+		font-size: 16px; 
+	}
+
+	#kalendarz .akt {
+		height: 40px; 
+		padding: 0 0 0 5px; 
+		font-size: 16px; 
+	}
+
+	#kalendarz .no_vis {
+		height: 40px; 
+		padding: 0 0 0 5px; 
+		font-size: 16px; 
+	}
+
+	.top_date {
+		font-size: 18px;
+	}
+
+.signature {
+	height: 100px;
+	div{
+		margin: 5px; 
+	}
+}
+
+}

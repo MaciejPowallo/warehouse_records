@@ -1,0 +1,174 @@
+
+@import "variables";
+
+ //----------------------- MAIN --------------------------------------------------//
+body {
+    overflow-x: hidden;
+    background-color: $white;
+   	margin: 0;
+   	padding: 0;
+}
+
+.content-position {
+   	max-height: 1px;
+   	margin: 0;
+   	padding: 0;
+}
+
+p, a {
+    color: $text-color;
+}
+
+a:hover, a:focus, ins{
+	text-decoration: none;
+}
+
+.red_text {
+  color: $text-cliced;
+}
+
+button, .btn{
+	display: none;
+    visibility: hidden;
+}
+
+
+.log_footer, .pos_footer {
+    color: $color;
+   	margin: 0;
+   	padding: 0;
+}
+
+.form-bottom-marg {
+	margin-bottom: 10px;
+}
+
+.form-top-marg {
+	margin-top: 10px;
+}
+
+.size-2{
+   font-size: $font-size-base * 2;
+}
+
+.marg_r10, .marg_10{
+	margin-right: 10px;
+}
+
+.marg_t50{
+	margin-top: 50px;
+}
+
+.marg_b100 {
+	margin-bottom: 0;
+}
+
+.border_hidden{
+	border: 2px solid $body-primary;
+	tr, td, th{
+		border: 2px solid $body-primary;
+		text-align: center;	
+	}
+}
+.master_content{
+	margin:0 auto; 
+	padding: 0; 
+	width:98%
+}
+
+.always_hidden{
+	display: none;
+    visibility: hidden;
+}
+
+.pass_form{
+	width: 100%;
+}
+
+.pagination{
+	display: none;
+    visibility: hidden;
+}
+//----------------------- WYSZUKIWARKA --------------------------------------------//
+input.search {
+	display: none;
+    visibility: hidden;
+   	height: 1px;
+   	margin: 0;
+   	padding: 0;
+}
+
+.button_search {
+	display: none;
+    visibility: hidden;
+   	height: 1px;
+   	margin: 0;
+   	padding: 0;
+}
+
+//----------------------- PAGE MASTER --------------------------------------------//
+//----------------------- PIERWSZE MENU ----------------------------------------- //
+
+.toolbar {
+	display: none;
+    visibility: hidden;
+   	height: 1px;
+   	margin: 0;
+   	padding: 0;
+}
+
+.logo_sm {
+	display: none;
+    visibility: hidden;
+   	height: 1px;
+   	margin: 0;
+   	padding: 0;
+}
+
+//----------------------- DRUGIE MENU ------------------------------------------- //
+.top_menu{
+	display: none;
+    visibility: hidden;
+   	height: 5px;
+}
+
+.navbar{
+	display: none;
+    visibility: hidden;
+}
+
+//----------------------- PAGE WELCOME --------------------------------------------//
+.log_form_position {
+    margin: $height-base auto $height-base * 5 auto;
+    max-width: 250px;
+    color: $color-darker;
+}
+
+div.mb {
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-top:20px;
+	margin-bottom: 40px;
+	max-width:50%;
+}
+
+.image_bg{
+	background-image: linear-gradient(to bottom, rgba($body-primary,0.8) 0%,rgba($body-primary,0.8) 100%), url("../images/bg.jpg");
+	background-color: $body-primary;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
+    z-index: -5; 
+    height : 100%;
+    left: 0;
+    top: 0;
+}
+
+.signature {
+  height: 100px;
+  div{
+    margin: 20px 10px; 
+  }
+}

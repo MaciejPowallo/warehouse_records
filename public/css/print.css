@@ -1,0 +1,170 @@
+body {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.content-position {
+  max-height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+p, a {
+  color: #000000;
+}
+
+a:hover, a:focus, ins {
+  text-decoration: none;
+}
+
+.red_text {
+  color: #C70202;
+}
+
+button, .btn {
+  display: none;
+  visibility: hidden;
+}
+
+.log_footer, .pos_footer {
+  color: #555555;
+  margin: 0;
+  padding: 0;
+}
+
+.form-bottom-marg {
+  margin-bottom: 10px;
+}
+
+.form-top-marg {
+  margin-top: 10px;
+}
+
+.size-2 {
+  font-size: 28px;
+}
+
+.marg_r10, .marg_10 {
+  margin-right: 10px;
+}
+
+.marg_t50 {
+  margin-top: 50px;
+}
+
+.marg_b100 {
+  margin-bottom: 0;
+}
+
+.border_hidden {
+  border: 2px solid #f5f8fa;
+}
+
+.border_hidden tr, .border_hidden td, .border_hidden th {
+  border: 2px solid #f5f8fa;
+  text-align: center;
+}
+
+.master_content {
+  margin: 0 auto;
+  padding: 0;
+  width: 98%;
+}
+
+.always_hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.pass_form {
+  width: 100%;
+}
+
+.pagination {
+  display: none;
+  visibility: hidden;
+}
+
+input.search {
+  display: none;
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.button_search {
+  display: none;
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar {
+  display: none;
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo_sm {
+  display: none;
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.top_menu {
+  display: none;
+  visibility: hidden;
+  height: 5px;
+}
+
+.navbar {
+  display: none;
+  visibility: hidden;
+}
+
+.log_form_position {
+  margin: 2em auto 10em auto;
+  max-width: 250px;
+  color: #222222;
+}
+
+div.mb {
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 50%;
+}
+
+.image_bg {
+  background-image: -webkit-linear-gradient(top, rgba(245, 248, 250, 0.8) 0%, rgba(245, 248, 250, 0.8) 100%), url("../images/bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 248, 250, 0.8) 0%, rgba(245, 248, 250, 0.8) 100%), url("../images/bg.jpg");
+  background-color: #f5f8fa;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -5;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.signature {
+  height: 100px;
+}
+
+.signature div {
+  margin: 20px 10px;
+}
+
+/*# sourceMappingURL=print.css.map */
