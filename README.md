@@ -2,7 +2,9 @@
 
 Warehouse Records 
 
-Graduate work created by Maciej Powallo in 2017.
+The application code is incomplete
+
+created by Maciej Powallo in 2017.
 
 All rights reserved
 
