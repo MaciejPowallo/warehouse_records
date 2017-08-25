@@ -1,10 +1,6 @@
-# README #
+# README - 09.2017 #
 
-Warehouse Records 
-
-The application code is incomplete
-
-created by Maciej Powallo in 2017.
+Warehouse Records designed and created by Maciej Powallo.
 
 All rights reserved
 
