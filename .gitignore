@@ -1,0 +1,27 @@
+###Laravel ignored###
+/bootstrap/compiled.php
+/vendor
+/node_modules
+composer.phar
+composer.lock
+Homestead.yaml
+Homestead.json
+.env.local.php
+.env.php
+.env
+.DS_Store
+workspace.xml
+
+
+###TEMPORARY FILES###
+Thumbs.db
+*~
+*.tmp
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+*.~vsdx
+
+###OTHER###
+

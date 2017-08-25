@@ -16,7 +16,7 @@
 	}
 
 	function miesiac_pl($mies) {
-		$mies_pl = array(1=>"Stycznia", "Lutego", "Marca", "Kwietnia", "Maja", "Czerwieca", "Lipieca", "Sierpnia", "Września", "Października", "Listopada", "Grudnia");
+		$mies_pl = array(1=>"Stycznia", "Lutego", "Marca", "Kwietnia", "Maja", "Czerwca", "Lipca", "Sierpnia", "Września", "Października", "Listopada", "Grudnia");
 	return $mies_pl[$mies];
 	}
 

@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-11 col-sm-offset-1 text-left ">
                             <?php
-                                for($i=1;$i<dzien_tyg_nr(date("n"),date("Y"));$i++)
+                                for($i=0;$i<dzien_tyg_nr(date("n"),date("Y"));$i++)
                                  echo '<div class="no_vis col14"> </div> ';
 
                                 for($i=1;$i<dni_mies(date("n"),date("Y"));$i++) 
